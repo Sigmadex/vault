@@ -1,3 +1,5 @@
+<img src="https://user-images.githubusercontent.com/33762147/155624313-7564f44c-1377-43ae-834a-88534e8fbf1a.jpg" style="border-radius:50%;width:72px;">
+
 # Vault
 Vault for Timelock Curve
 
