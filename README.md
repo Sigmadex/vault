@@ -13,9 +13,10 @@ The idea of an AVM is to leverage a mathematical model, independent parameters a
 # How It Works
 The vault is a Smart Contract which increases the total allowance of token withdrawal against a mathematical vesting formula as time progresses.
 
-
-|function|desc|
-|----------|----|
-|`owner`   |Address of vault owner which can be set by admin only|
-|`auth`    |Address of the admin who can set the `owner` of the vault|
-|`withdraw`|Function to withdraw SDEX tokens from vault|
+|query|r/w|type|desc|
+|----------|-|----|---|
+|`owner`   |read|address|Address of vault owner|
+|`auth`    |read|address|Address of the admin who can set the `owner` of the vault|
+|`balance` |read|uint256|Read balance function|
+|`withdraw`|write|address, uint256|Function to withdraw SDEX tokens from the vault|
+|`setOwner`|write|address|Sets the `owner` of the vault, this function can only be called by the `auth` wallet|
