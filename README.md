@@ -10,17 +10,18 @@ The idea of an AVM is to leverage a mathematical model, independent parameters a
 
 ## Vesting Curve
 ### Formula
+
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=A\left(\left(1-y_{0}\right)\cdot\left(1-i^{\left(-x\right)}\right)\cdot\left(\frac{1}{1-i^{-t}}\right)+y_{0}\right)" style="width:300px;">
 </p>
 
 ### Example Regression
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/33762147/155788169-8b64b219-8474-4ed5-95d0-a21994a9645f.png" style="width:500px;">
 </p>
 
 ### Variables
-
 <div align="center">
 
 | var | desc |   
@@ -46,8 +47,11 @@ The vault is a Smart Contract which increases the total allowance of token withd
 |`setTkn`|write|address|Sets the token smart contract address to track - must be `auth` to use function|
 
 ## Process
-
 1. Smart Contract Vault is deployed via Remix
    - `auth` sets itself to deployer <em>address</em>
    - `setTkn` <em>address</em> is set by `auth`
+   - `setOwner` is called by `auth` to set owner of the contract to a specific <em>address</em>
 2. SDEX tokens are deposited into the vault
+3. Smart contract vault allows `withdraw` to be called if last block [timestamp] has surpassed a 24 hr timeframe
+
+[timestamp]: https://support.avax.network/en/articles/5106526-measuring-time-in-smart-contracts
