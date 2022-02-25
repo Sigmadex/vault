@@ -9,22 +9,45 @@
 The idea of an AVM is to leverage a mathematical model, independent parameters and a smart contract architecture to handle the dynamic distribution of assets when called for by the contract owner.
 
 ## Vesting Curve
+### Formula
+<p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=A\left(\left(1-y_{0}\right)\cdot\left(1-i^{\left(-x\right)}\right)\cdot\left(\frac{1}{1-i^{-t}}\right)+y_{0}\right)" style="width:300px;">
+</p>
+
+### Example Regression
+<p align="center">
+<img src="https://user-images.githubusercontent.com/33762147/155788169-8b64b219-8474-4ed5-95d0-a21994a9645f.png" style="width:500px;">
+</p>
+
+### Variables
+
+<div align="center">
+
+| var | desc |   
+| --- | ---  |
+|<em>A</em>  |Amplitude  |
+|<em>t</em>  |Days       |
+|<em>i</em>  |Concave    |
+|<em>y^0</em>|Starting Point|
+
+</div>
 
 ## How It Works
 The vault is a Smart Contract which increases the total allowance of token withdrawal against a mathematical vesting formula as time progresses.
 
 |query|r/w|type|desc|
 |----------|----|-------|----------------------|
-|`owner`   |read|address|Address of vault owner|
-|`auth`    |read|address|Address of the admin who can set the `owner` of the vault|
-|`totalBalance` |read|uint256|Displays the entire token balance|
+|`owner`   |read|<em>address</em>|Address of vault owner|
+|`auth`    |read|<em>address</em>|Address of the admin who can set the `owner` of the vault|
+|`totalBalance` |read|<em>uint256</em>|Displays the entire token balance|
 |`unlockedBalance`|read|unit256|Displays the balance available for withdrawal|
 |`withdraw`|write|address, uint256|Function to withdraw SDEX tokens from the vault|
 |`setOwner`|write|address|Sets the `owner` of the vault, this function can only be called by the `auth` wallet|
-|`setTkn`|write|address|Sets the smart contract address must be `auth` to use function|
+|`setTkn`|write|address|Sets the token smart contract address to track - must be `auth` to use function|
 
 ## Process
 
-1. Smart Contract Vault is deployed. `Auth` is immediately set to the user who deployed the contract.
-2. SDEX tokens are deposited into the vault.
+1. Smart Contract Vault is deployed via Remix
+   - `auth` sets itself to deployer <em>address</em>
+   - `setTkn` <em>address</em> is set by `auth`
+2. SDEX tokens are deposited into the vault
