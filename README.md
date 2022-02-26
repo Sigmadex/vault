@@ -54,10 +54,13 @@ The vault is a Smart Contract which increases the total allowance of token withd
 2. SDEX tokens are deposited into the vault
 3. Smart contract vault allows `withdraw` to be called if last block [timestamp] has surpassed a 24 hr timeframe
 
-## Permissions
+## Contract Permissions
 
-`withdraw` can only be called by `owner` and the function should throw an exception if `owner` is not set.
-
-`setTkn` can only be called by `auth`.
+Write functions for vault contract.
+|function|permissions|
+|--------|-----------|
+|`withdraw`| can only be called by `owner` and the function should throw an exception if `owner` is not set|
+|`setTkn`| can only be called by `auth` otherwise throw exception|
+|`setOwner`| can only be called by `auth` otherwise throw exception|
 
 [timestamp]: https://support.avax.network/en/articles/5106526-measuring-time-in-smart-contracts
