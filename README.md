@@ -42,7 +42,7 @@ The vault is a Smart Contract which increases the total allowance of token withd
 |`auth`    |read|<em>address</em>|Address of the admin who can set the `owner` of the vault|
 |`totalBalance` |read|<em>uint256</em>|Displays the entire token balance|
 |`unlockedBalance`|read|unit256|Displays the balance available for withdrawal|
-|`withdraw`|write|address, uint256|Function to withdraw <em>unit256</em> amount of SDEX tokens from the vault to an <em>address</em>|
+|`withdraw`|write|address, uint256|Function to withdraw <em>uint256</em> amount of SDEX tokens from the vault to an <em>address</em>|
 |`setOwner`|write|address|Sets the `owner` of the vault, this function can only be called by the `auth` wallet|
 |`setTkn`|write|address|Sets the token smart contract address to track - must be `auth` to use function|
 
@@ -61,6 +61,6 @@ Write functions for vault contract.
 |--------|-----------|
 |`withdraw`| can only be called by `owner` and the function should throw an exception if `owner` is not set|
 |`setTkn`| can only be called by `auth` otherwise throw exception|
-|`setOwner`| can only be called by `auth` otherwise throw exception|
+|`setOwner`| can only be called once by `auth` otherwise throw exception|
 
 [timestamp]: https://support.avax.network/en/articles/5106526-measuring-time-in-smart-contracts
