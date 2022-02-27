@@ -53,7 +53,7 @@ The vault is a Smart Contract which increases the total allowance of token withd
    - `setOwner` is called by `auth` to set owner of the contract to a specific <em>address</em>
 2. SDEX tokens are deposited into the vault
 4. `unlockedBalance` should be updated every 24 hr [timestamp]
-5. If `withdraw` is called with an `unlockedBalance` greater than 0, allow transfer to <em>address</em>.
+5. If `withdraw` is called with an `unlockedBalance` greater than 0, allow transfer of maximum `unlockedBalance` to <em>address</em>
 
 ## Contract Permissions
 
