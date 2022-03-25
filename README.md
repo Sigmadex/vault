@@ -80,7 +80,7 @@ Wallet Not Connected Yet:
 Wallet Connected:
 ![2022-03-25_10-25-15](https://user-images.githubusercontent.com/33762147/160161283-9269442d-c41d-48fc-9b41-b814e898096b.jpg)
 
-### Claim History (Admin)
+### Claim History (Private)
 
 <div align="center">
    
@@ -95,5 +95,5 @@ Wallet Connected:
 
 |Desc|Domain|
 |-------|-----------|
-|Vault|https://vault.sigmadex.org
-|Admin Panel|https://vault.sigmadex.org/records|
+|Claim Vault|https://vault.sigmadex.org|
+|Claim History|https://vault.sigmadex.org/records|
