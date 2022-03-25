@@ -77,8 +77,16 @@ Write functions for vault contract.
 ![2022-03-25_9-40-41](https://user-images.githubusercontent.com/33762147/160153475-0c162b08-777d-4e01-9d79-45c752474482.jpg)
 
 ### Claim History (Admin)
-![2022-03-25_10-02-58](https://user-images.githubusercontent.com/33762147/160157629-1c8e6649-d7a1-46ea-9962-b53ae11f61ea.jpg)
 
+<div align="center">
+   
+|TX ID|Timestamp|Vault Address|Destination|Claim Amount|
+|-----|---------|-------------|----------|-------------|
+   
+</div>
+
+![2022-03-25_10-02-58](https://user-images.githubusercontent.com/33762147/160157629-1c8e6649-d7a1-46ea-9962-b53ae11f61ea.jpg)
+   
 ## Proposed Deployment Locations
 
 |Desc|Domain|
