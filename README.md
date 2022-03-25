@@ -43,7 +43,7 @@ The vault is a Smart Contract which increases the total allowance of token withd
 |`tknContract`  |read|<em>address</em>|Contract address of the tokens to track in the vault|
 |`totalBalance` |read|<em>uint256</em>|Displays the entire token balance|
 |`unlockedBalance`|read|<em>unit256</em>|Displays the balance available for withdrawal|
-|`withdraw`|write|<em>address</em>, <em>uint256</em>|Function to withdraw <em>uint256</em> amount of SDEX tokens from the vault to an <em>address</em>|
+|`withdraw`|write|<em>address</em>, <em>uint256</em>|Function to withdraw <em>uint256</em> amount of SDEX tokens from the vault to the <em>address</em> wallet connected|
 |`setOwner`|write|<em>address</em>|Sets the `owner` of the vault, this function can only be called by the `auth` wallet|
 |`setTkn`|write|<em>address</em>|Sets the token smart contract address to track `tknContract` - must be `auth` to use function|
 
