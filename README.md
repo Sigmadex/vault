@@ -74,7 +74,11 @@ Write functions for vault contract.
 ## Wireframe
 
 ### Claim (User)
-![2022-03-25_9-40-41](https://user-images.githubusercontent.com/33762147/160153475-0c162b08-777d-4e01-9d79-45c752474482.jpg)
+Wallet Not Connected Yet:
+![2022-03-25_10-27-34](https://user-images.githubusercontent.com/33762147/160161655-13d0358a-b071-42e3-87a9-64ad5f61fc48.jpg)
+
+Wallet Connected:
+![2022-03-25_10-25-15](https://user-images.githubusercontent.com/33762147/160161283-9269442d-c41d-48fc-9b41-b814e898096b.jpg)
 
 ### Claim History (Admin)
 
