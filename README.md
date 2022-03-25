@@ -69,8 +69,6 @@ Write functions for vault contract.
 
 <img src="https://user-images.githubusercontent.com/33762147/155869551-3615c0a0-f339-4216-866d-68798a03719b.png">
 
-[timestamp]: https://support.avax.network/en/articles/5106526-measuring-time-in-smart-contracts
-
 ## Wireframe
 
 ### Claim (User)
@@ -91,9 +89,23 @@ Wallet Connected:
 
 ![2022-03-25_10-31-50](https://user-images.githubusercontent.com/33762147/160162271-12b47497-39d2-481d-85cc-dc0037b888c7.jpg)
    
+## Figma Design
+
+
+
+
+<div align="center">
+   
+![2022-03-25_13-58-31](https://user-images.githubusercontent.com/33762147/160192646-907ba8cc-cf29-4710-be6d-53b08b882b9b.jpg)
+   https://www.figma.com/file/jKQZgP4Vw4n3P0Lf1k7wQ5/Vault-Sigma?node-id=0%3A1
+   
+</div>
+
 ## Proposed Deployment Locations
 
 |Desc|Domain|
 |-------|-----------|
 |Claim Vault|https://vault.sigmadex.org|
 |Claim History|https://vault.sigmadex.org/records|
+
+[timestamp]: https://support.avax.network/en/articles/5106526-measuring-time-in-smart-contracts
