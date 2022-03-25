@@ -89,7 +89,7 @@ Wallet Connected:
    
 </div>
 
-![2022-03-25_10-02-58](https://user-images.githubusercontent.com/33762147/160157629-1c8e6649-d7a1-46ea-9962-b53ae11f61ea.jpg)
+![2022-03-25_10-31-50](https://user-images.githubusercontent.com/33762147/160162271-12b47497-39d2-481d-85cc-dc0037b888c7.jpg)
    
 ## Proposed Deployment Locations
 
