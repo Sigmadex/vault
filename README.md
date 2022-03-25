@@ -73,8 +73,15 @@ Write functions for vault contract.
 
 ## Wireframe
 
-![2022-03-25_9-27-35](https://user-images.githubusercontent.com/33762147/160151130-e24be84e-d926-40d6-8d38-e55cc988a8f9.jpg)
+### Claim (User)
+![2022-03-25_9-40-41](https://user-images.githubusercontent.com/33762147/160153475-0c162b08-777d-4e01-9d79-45c752474482.jpg)
 
-## Deploy Location
+### Claim History (Admin)
+![2022-03-25_10-02-58](https://user-images.githubusercontent.com/33762147/160157629-1c8e6649-d7a1-46ea-9962-b53ae11f61ea.jpg)
 
-https://vault.sigmadex.org
+## Proposed Deployment Locations
+
+|Desc|Domain|
+|-------|-----------|
+|Vault|https://vault.sigmadex.org
+|Admin Panel|https://vault.sigmadex.org/records|
