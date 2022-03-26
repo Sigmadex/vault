@@ -106,6 +106,6 @@ Wallet Connected:
 |Desc|Domain|
 |-------|-----------|
 |Claim Vault|https://vault.sigmadex.org|
-|Claim History|https://vault.sigmadex.org/records|
+|Claim History|https://vault.sigmadex.org/history|
 
 [timestamp]: https://support.avax.network/en/articles/5106526-measuring-time-in-smart-contracts
