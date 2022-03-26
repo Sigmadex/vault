@@ -91,14 +91,11 @@ Wallet Connected:
    
 ## Figma Design
 
-
-
-
 <div align="center">
    
 ![2022-03-25_13-58-31](https://user-images.githubusercontent.com/33762147/160192646-907ba8cc-cf29-4710-be6d-53b08b882b9b.jpg)
-   https://www.figma.com/file/jKQZgP4Vw4n3P0Lf1k7wQ5/Vault-Sigma?node-id=0%3A1
    
+https://www.figma.com/file/jKQZgP4Vw4n3P0Lf1k7wQ5/Vault-Sigma?node-id=0%3A1
 </div>
 
 ## Proposed Deployment Locations
