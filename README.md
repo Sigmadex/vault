@@ -66,8 +66,8 @@ Write functions for vault contract.
 |`setOwner`| can only be called once by `auth` otherwise throw exception|
 |`setT`| set the value of *t* variable|
 |`sety0`| set the value of <img src="https://render.githubusercontent.com/render/math?math=y_0"> variable|
-|`setA`| set the value of A variable|
-|`setI`| set the value of i variable|
+|`setA`| set the value of *A* variable|
+|`setI`| set the value of *i* variable|
 
 ## Proposed Flow Diagram
 
