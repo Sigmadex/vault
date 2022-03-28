@@ -29,7 +29,7 @@ The idea of an AVM is to leverage a mathematical model, independent parameters a
 |<em>A</em>  |Amplitude  |
 |<em>t</em>  |Days       |
 |<em>i</em>  |Concave    |
-|<em>y^0</em>|Starting Point|
+|<img src="https://render.githubusercontent.com/render/math?math=y_0">|Starting Point|
 
 </div>
 
@@ -64,6 +64,10 @@ Write functions for vault contract.
 |`withdraw`| can only be called by `owner` and the function should throw an exception if `owner` is not set|
 |`setTkn`| can only be called by `auth` otherwise throw exception|
 |`setOwner`| can only be called once by `auth` otherwise throw exception|
+|`setT`| set the value of *t* variable|
+|`sety0`| set the value of <img src="https://render.githubusercontent.com/render/math?math=y_0"> variable|
+|`setA`| set the value of A variable|
+|`setI`| set the value of i variable|
 
 ## Proposed Flow Diagram
 
@@ -106,3 +110,8 @@ https://www.figma.com/file/jKQZgP4Vw4n3P0Lf1k7wQ5/Vault-Sigma?node-id=0%3A1
 |Claim History|https://vault.sigmadex.org/history|
 
 [timestamp]: https://support.avax.network/en/articles/5106526-measuring-time-in-smart-contracts
+
+## References
+
+Deconstructed Sigma Curve:
+https://www.desmos.com/calculator/mgkvhe6czx
