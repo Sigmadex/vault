@@ -12,7 +12,7 @@ The idea of an AVM is to leverage a mathematical model, independent parameters a
 ### Formula
 
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=A\left(\left(1-y_{0}\right)\cdot\left(1-i^{\left(-x\right)}\right)\cdot\left(\frac{1}{1-i^{-t}}\right)+y_{0}\right)" style="width:300px;">
+<img src="https://render.githubusercontent.com/render/math?math=A\left(\left(1-y_{0}\right)\cdot\left(1-i^{\left(-x\right)}\right)\cdot\left(\frac{1}{1-i^{-t}}\right)%2By_{0}\right)" style="width:300px;">
 </p>
 
 ### Example Regression
