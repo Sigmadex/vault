@@ -64,7 +64,7 @@ Write functions for vault contract.
 |`withdraw`| can only be called by `owner` and the function should throw an exception if `owner` is not set|
 |`setTkn`| can only be called by `auth` otherwise throw exception|
 |`setOwner`| can only be called once by `auth` otherwise throw exception|
-|`setT`| set the value of *t* variable|
+|`setT`| set the value of *t* variable variable can only be called once by `auth` otherwise throw exception|
 |`sety0`| set the value of <img src="https://render.githubusercontent.com/render/math?math=y_0"> variable can only be called once by `auth` otherwise throw exception|
 |`setA`| set the value of *A* variable can only be called once by `auth` otherwise throw exception|
 |`setI`| set the value of *i* variable can only be called once by `auth` otherwise throw exception|
