@@ -16,14 +16,13 @@ contract Vault {
     address public owner;
     address public tknContract;
 
-    uint256 public unlockedBalance;
-    uint256 public totalBalance;
-    uint256 public startTime;
+    uint256 private unlockedBalance;
+    uint256 private totalBalance;
+    uint256 private startTime;
 
-    uint256 public totalWithdraw;
-    uint256 public initialTotal;
+    uint256 private totalWithdraw;
+    uint256 private initialTotal;
 
-    uint256 public c_A;
     uint256 public c_i = 9876; //decimal 4 (1 - 10000)
     uint256 public c_t = 10; // 1-1000
     uint256 public c_y0 = 100; //decimal 1 (0 - 1000)
