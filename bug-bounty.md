@@ -28,7 +28,7 @@ to be eligible for the bug bounty:
 - The `withdraw` method of any token strictly decrease the balance of the token vault by the transfer amount and increases the balance of token recipient by the transfer amount.
 - The token balance of an address can only change when thre is a call to `withdraw` by the contract owner.
 
-## Comphensation
+## Compensation
 
 Rewards will be allocated based on the severity of the bug disclosed and will be evaluated and rewarded at the discretion of the Sigmadex team.
 For critical bugs that lead to loss of user funds (more than 1% or user specified slippage tolerance),
