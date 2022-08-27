@@ -1,0 +1,47 @@
+.vote-section {
+  background-image: url('./Bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #404C55;
+  position: relative;
+}
+
+.vote-display-section {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.vote-section-warning {
+  background-color: #79a8ca6b;
+  z-index: 5000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.warning-icon {
+  margin: auto;
+}
+
+.warning-msg {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #404C55;
+}
+
+.options-card-container>div {
+  border: 1px solid #B3BEC6;
+}
+.disabled-options-card-container>div {
+  background-color: #ECF2F5;
+  color: #B3BEC6;
+}

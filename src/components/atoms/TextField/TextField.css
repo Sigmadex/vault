@@ -1,0 +1,56 @@
+input {
+  font-family: WorkSans;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):not(:placeholder-shown) ~ .floating-label,
+.floating-label[data-visible='true'] {
+  top: -16px;
+  font-size: 11px;
+  color: black;
+}
+
+.floating-label,
+.floating-label-2 {
+  transition: 0.2s ease all;
+}
+
+input:focus ~ .floating-label-2,
+input:not(:focus):not(:placeholder-shown) ~ .floating-label-2,
+.floating-label-2[data-visible='true'] {
+  top: -18px;
+  font-size: 11px;
+  left: 12px;
+  color: black;
+}
+
+.dark input:focus ~ .floating-label,
+.dark input:not(:focus):not(:placeholder-shown) ~ .floating-label,
+.dark input:focus ~ .floating-label-2,
+.dark input:not(:focus):not(:placeholder-shown) ~ .floating-label-2,
+.floating-label-2[data-visible='true'],
+.floating-label[data-visible='true'] {
+  color: #fff !important;
+}
+
+input[data-error='true'],
+.dark input[data-error='full'] {
+  border-bottom: 2px solid #d32f2f !important;
+  border-color: #d32f2f !important;
+}
+
+input[data-error='full'],
+.dark input[data-error='full'] {
+  border: 2px solid #d32f2f !important;
+  border-color: #d32f2f !important;
+}
