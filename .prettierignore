@@ -1,0 +1,14 @@
+.storybook
+node_modules
+public
+.gitignore
+.nvmrc
+.prettierignore
+package-lock.json
+package.json
+README.md
+tsconfig.json
+storybook-static
+/storybook-static
+storybook-static/*
+*.d.ts
