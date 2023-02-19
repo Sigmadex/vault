@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.11;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
@@ -24,7 +24,7 @@ contract Vault {
     uint256 private initialTotal;
 
     uint256 public c_i = 9876; //decimal 4 (1 - 10000)
-    uint256 public c_t = 10; // 1-1000
+    uint256 public c_t = 10; // 1-1825
     uint256 public c_y0 = 100; //decimal 1 (0 - 1000)
 
     event Withdraw(address withdrawer, uint256 amount);
@@ -32,7 +32,7 @@ contract Vault {
     /**
     @notice set inital parameters for this contract
     @param _c_i Concave (0 ~ 10000)
-    @param _c_t Days (1 ~ 1000)
+    @param _c_t Days (1 ~ 1825)
     @param _c_y0 Starting Point (0 ~ 1000) decimal
     */
     constructor(uint256 _c_i, uint256 _c_t, uint256 _c_y0) {
@@ -70,8 +70,10 @@ contract Vault {
     function getUnlocked_TotalBalance() public view returns (uint256, uint256){
         uint256 period = (block.timestamp - startTime) / 1 days;
         uint256 temp_unlock = IERC20(tknContract).balanceOf(address(this));
+
         if (initialTotal != 0)
             temp_unlock = initialTotal;
+
         if (period > c_t) period = c_t;
 
         uint256 b = 10 ** 18;
@@ -115,10 +117,10 @@ contract Vault {
         require(msg.sender == owner, "msg.sender is not Owner!");
         require(unlockedBalance > 0, "unlockedBalance is 0");
         require(amount <= unlockedBalance, "unlockedBalance is bigger");
-        IERC20(tknContract).transfer(dest, amount);
         totalBalance -= amount;
         unlockedBalance -=amount;
         totalWithdraw += amount;
+        IERC20(tknContract).transfer(dest, amount);
         emit Withdraw(dest, amount);
     }
 }
